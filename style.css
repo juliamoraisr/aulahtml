@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(80, 97, 89)
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; padding: 2em;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    background-color: rgb(216, 194, 179);
+    margin-bottom: 2em;
+}
+img{
+    width: 100%;
+}
+.card div{
+    padding: 2em;
+}
+.card:nth-child(even) img{
+    order: 2;
+}
+.btn{
+    background-color: rgb(57, 76, 71);
+    color: black;
+    padding: 5px 15px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 2em;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(41, 55, 43);
+    color: white;
+    box-shadow: 1px 1px 2px;
+    transition: background-color 1s ease;
+}
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.5em;
+}
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+
+}
+.galeria div:hover{
+
+}
+.galeria:hover div:not(:hover){
+    filter: opacity(0.5);
+
+}
